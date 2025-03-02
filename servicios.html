@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="descrption" content="Descripcion de tu pagina web">
+        <meta name="viewport" content="width=device-width, initial-scales=1.0">
+        <title>PResort Hotel</title>
+        <link rel="stylesheet" href="SiteStyle/global.css">
+    </head>
+    
+   <style>
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Contenedor principal que agrupa todas las tarjetas */
+    .container {
+      display: flex;
+      flex-wrap: wrap;       /* Permite que las tarjetas pasen a otra fila si no caben */
+      gap: 20px;            /* Espacio entre las tarjetas */
+      justify-content: space-around; 
+      padding: 20px;
+    }
+
+    /* Cada tarjeta individual */
+    .card {
+      width: 30%;           /* Ajusta el ancho según lo que quieras (para 3 tarjetas por fila, ~30% funciona) */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 16px;
+      text-align: left;  
+      background-color: #d3d3d3/* Ajuste de alineación de texto */
+    }
+
+    /* Imagen de ejemplo (cambia la ruta y el alt) */
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: bisque
+    }
+
+    /* Título de la habitación */
+    .card h2 {
+      margin: 0 0 10px 0;
+    }
+
+    /* Ajusta el párrafo según tu texto */
+    .card p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Media query para pantallas pequeñas (móviles) */
+    @media (max-width: 768px) {
+      .card {
+        width: 100%; /* Para que ocupen toda la pantalla en dispositivos pequeños */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Tarjeta 1: Habitación familiar -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ruf3FM3uQCad95NgGmDg8WJ8hgAYm4YePg&s">
+    <h2>Restaurante</h2>
+    <strong>11am-11pm</strong>
+    <p>
+      Restaurante criollo, frente al mar con menú variado. un buen lugar para disfrutar de la brisa y la vista al mar mientras disgustas tu plato favorito.
+      
+    </p>
+  </div>
+
+  <!-- Tarjeta 2: Habitación sencilla -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwH7kBU9quUgx1S9mrBHwzNYRPQyZGuGp4oQ&s">
+    <h2>Gimnasio</h2>
+    <strong>7am-8pm</strong>
+    <p>
+      Gimnasios equipado con aire acondicionado, máquinas de masaje y baños con ducha. (+15)  
+      
+    </p>
+  </div>
+
+  <!-- Tarjeta 3: Habitación VIP -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZKBi3CMJiO79Mfcodzj751lVohDjHqd97A&s">
+    <h2>Spa</h2>
+     <strong>8am-6pm</strong>
+    <p>
+      Un espacio donde relajarse con una copa de vino y música relajada. Piscina con agua caliente. Ofrecen servicios de manicura y pedicura, entre otros...
+     
+    </p>
+  </div>
+
+  <!-- Tarjeta 4: Habitación para parejas -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv17GcEbcj0M4QxJQ5sPFnvxWXISIOvEe3rA&s">
+    <h2>Bar</h2>
+    <strong>9am-12am</strong> 
+    <p>
+     Variedad de bebida, cócteles populares, cervezas, vinos, licores. Tapas y aperitivos. 
+    </p>
+  </div>
+
+  <!-- Tarjeta 5: Habitación dos camas -->
+  <div class="card">
+    <img src="data:image/jpeg;base64,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">
+    <h2>Piscina con tobogan</h2>
+    <strong>8am-11pm</strong>
+    <p>
+      Nuestra pscina cuenta con toboganes para llevar la experiencia mas allá, dandote una mejor diversión en tu estadias y disfrte de nuestra piscina. La piscina tiene una profundidad de 3-6pies. Contamos con servicio de salvavidas y supervisión que operan durante las horas de la pscina.  
+      
+    </p>
+  </div>
+
+  <!-- Tarjeta 6: Habitación pequeña -->
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCNoOakjQYih921nPY1Z_TRGrODiF5_xn-ng&s">
+    <h2>Lobby</h2>
+     <strong>24h</strong>
+    <p>
+      Contamos con un espacio cómodo para sentarte, Internet, gratis, máquinas de snacks y bebida. Contamos con un "gameroom" para juegos y entretenimiento. 
+     
+    </p>
+  </div>
+
+</div>
+  <nav>
+            <ul>
+              <li><a href="bienvenido.html">Bienvenida</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            <li><a href="habitaciones.html">habitaciones</a></li>
+            <li><a href="servicios.html">servicios</a></li>
+             
+            </ul>
+        </nav>
+
+</body>
+<
+
+
+
+
+
+        
+       

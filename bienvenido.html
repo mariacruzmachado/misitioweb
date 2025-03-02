@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PRresort</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor principal que organiza dos columnas: 
+       izquierda (contenido) y derecha (sidebar) */
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+
+    /* Columna izquierda: Título, texto e imagen */
+    .left-content {
+      flex: 1;              /* Ocupa todo el espacio disponible */
+      margin-right: 20px;   /* Espacio entre columnas */
+    }
+
+    .left-content h1 {
+      margin-top: 0;
+    }
+
+    .left-content img {
+      width: 100%;
+      max-width: 600px;     /* Ajusta el ancho máximo de la imagen */
+      border-radius: 5px;
+      display: block;
+      margin: 20px 0;
+    }
+
+    /* Barra lateral (sidebar) a la derecha */
+    .sidebar {
+      width: 300px;         /* Ajusta según tu preferencia */
+      min-width: 250px;     /* Para pantallas más pequeñas */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-sizing: border-box;
+      align-self: flex-start; /* Para que se alinee en la parte superior */
+      display: flex;
+      flex-direction: column; /* Apilar las secciones (reserva, reviews, opinión) */
+      gap: 20px;             /* Espacio vertical entre secciones */
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .reserva label,
+    .opinion label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* Campos de fecha con ancho completo */
+    .reserva input[type="date"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    /* Sección de reviews */
+    .reviews p {
+      margin: 0 0 10px;
+    }
+
+    /* Sección para dejar opinión */
+    .opinion textarea {
+      width: 100%;
+      height: 80px;
+      resize: vertical;     /* Permite ajustar el alto del textarea */
+    }
+
+    /* Responsividad: en pantallas pequeñas se apilan las dos columnas */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- COLUMNA IZQUIERDA: Título, descripción e imagen -->
+  <div class="left-content">
+    <h1>PRresort</h1>
+    <p>
+      En PRresort estamos encantados de servirte y de que te lleves 
+      de nosotros una de las experiencias más inolvidables, ofreciéndote 
+      siempre los mejores servicios de entretenimiento, comodidad y todo 
+      lo que buscas para pasarla bien en un solo lugar.
+    </p>
+
+    <!-- Imagen principal (ajusta la ruta y el alt) -->
+    <img src="presort.pdf"
+         
+ <p> Ubicación del hotel</p>
+    
+<p>Nos encontramos en: Av. Principal 123, San Juan, Puerto Rico</p>
+
+<!-- Insertar un mapa interactivo -->
+<iframe 
+    src="18.4632° N, 66.1148° W" 
+    width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+</iframe>
+  </div>
+    <nav>
+            <ul>
+              <li><a href="bienvenido.html">Bienvenida</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            <li><a href="habitaciones.html">habitaciones</a></li>
+            <li><a href="servicios.html">servicios</a></li>
+            
+            </ul>
+        </nav>
+    
+
+  <!-- COLUMNA DERECHA: Reserva, reseñas y opinión -->
+  <div class="sidebar">
+
+    <!-- Sección: Separa tu fecha -->
+    <div class="reserva">
+      <h3>Separa tu fecha aquí</h3>
+      <label for="llegada">Día de llegada:</label>
+      <input type="date" id="llegada" name="llegada">
+
+      <label for="salida">Día de salida:</label>
+      <input type="date" id="salida" name="salida">
+    </div>
+
+    <!-- Sección: Reviews -->
+    <div class="reviews">
+      <h3>REVIES:</h3>
+      <p><strong>Lorena:</strong> “Me encantó el hotel, una gran experiencia con PRresort, sin duda volveré.”</p>
+      <p><strong>Juan:</strong> “Fui con mi familia y la pasamos muy bien, quedé encantado con los servicios y con el hotel.”</p>
+    </div>
+
+    <!-- Sección: Déjanos tu opinión -->
+    <div class="opinion">
+      <h3>Déjanos tu opinión</h3>
+      <textarea placeholder="Escribe un comentario..."></textarea>
+    </div>
+       
+      <h4>Contactanos</h4>
+      <a href="787-787-7878"> Llamanos al 787-787-7878</a>
+
+  </div>
+
+</body>
+</html>

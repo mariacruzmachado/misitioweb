@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="descrption" content="Descripcion de tu pagina web">
+        <meta name="viewport" content="width=device-width, initial-scales=1.0">
+        <title>PResort Hotel</title>
+        <link rel="stylesheet" href="SiteStyle/global.css">
+    </head>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 1200px; /* Ancho máximo para centrar contenido en pantallas grandes */
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Sección de Historia */
+    .history-section {
+      display: flex;
+      flex-wrap: wrap;      /* Permite que se adapte en pantallas pequeñas */
+      gap: 20px;            /* Espacio entre la imagen y el texto */
+      margin-bottom: 40px;  /* Separación con el resto del contenido */
+    }
+    .history-section img {
+      width: 100%;
+      max-width: 400px;     /* Limita el ancho máximo de la imagen */
+      height: auto;         /* Mantiene la proporción */
+      border-radius: 5px;
+    }
+    .history-text {
+      flex: 1;             /* Ocupa el espacio restante para el texto */
+      min-width: 250px;
+    }
+    .history-text h1 {
+      margin-top: 0;
+    }
+    .history-text p {
+      text-align: justify; /* Alineación justificada, opcional */
+    }
+
+    /* Sección Misión y Visión */
+    .mission-vision-section {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .mission-vision-section h2 {
+      margin-top: 0;
+    }
+
+    /* Ajuste responsivo para pantallas pequeñas */
+    @media (max-width: 768px) {
+      .history-section {
+        flex-direction: column; /* Imagen y texto en columna */
+      }
+      .history-section img,
+      .history-text {
+        max-width: 100%;  /* Para que ocupen todo el ancho en móvil */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sección: Su historia -->
+  <div class="history-section">
+    <div class="image-container">
+      <!-- Cambia la ruta de la imagen y el texto alternativo -->
+      <img src="https://www.blog.lamparas.es/wp-content/uploads/2015/07/iluminacion-recepcion-hotel.jpg">
+    </div>
+      <nav>
+            <ul>
+            <li><a href="bienvenido.html">Bienvenida</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            <li><a href="habitaciones.html">habitaciones</a></li>
+            <li><a href="servicios.html">servicios</a></li>
+             
+            </ul>
+        </nav>
+    <div class="history-text">
+      <h1>Su historia</h1>
+      <p>
+        PRresort abrió sus puertas en febrero de 2025, a la costa de San Juan, 
+        con una ubicación estratégica ya que desde siempre ha sido un lugar 
+        lleno de turistas encantados con las bellezas naturales de la isla.
+        PRresort representa una transición entre lo salvaje y lo moderno con 
+        el fin de llamar la atención de todo aquel que pase. El lobby celebra 
+        el elegante pasado a manos de este pueblo de San Juan con un acento 
+        tallado a mano desde Santo Domingo y terreno natural rosa de Carrara 
+        de Italia. En cada rincón el diseño interior se inspiró tomando en 
+        cuenta la elegancia del viejo mundo. Por otro lado, el modernismo 
+        de los opuestos, donde ambos mundos coexisten a la perfección: 
+        la oscuridad y la luz.
+      </p>
+    </div>
+  </div>
+    
+
+  <!-- Sección: Misión y Visión -->
+  <div class="mission-vision-section">
+    <div class="mission">
+      <h2>Misión</h2>
+      <p>
+        Nuestra misión es brindar una experiencia inolvidable de lujo y confort, 
+        fusionando la calidez de la hospitalidad puertorriqueña con la belleza 
+        natural de la isla. Nos comprometemos a ofrecer a nuestros huéspedes un 
+        refugio único, donde puedan relajarse, disfrutar de servicios de primera 
+        clase y sumergirse en la cultura local.
+      </p>
+    </div>
+    <div class="vision">
+      <h2>Visión</h2>
+      <p>
+        Ser el destino líder en PR, reconocido por ofrecer experiencias 
+        excepcionales de lujo y confort, a la vez que honramos, preservamos 
+        y difundimos la vibrante cultura local. En PRresort, aspiramos a ser 
+        el lugar preferido de huéspedes de todo el mundo que buscan un ambiente 
+        de armonía, calidez y excelencia en el servicio.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+  
+     
